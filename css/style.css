@@ -1,0 +1,394 @@
+:root {
+  --main-text-cl: #212121;
+  --btn-bg-cl: #f5f4fa;
+  --btn-bg-cl-hover: #2196f3;
+  --btn-cl-hover: #fff;
+  --secondary-text-cl: #757575;
+  --secondary-bg-cl: #2f303a;
+  --footer-mail-tel-cl: #ffffff99;
+  --ourteam-bg-cl: #f5f4fa;
+  --border-cl: #eee;
+}
+
+body {
+  color: var(--main-text-cl);
+  font-family: Roboto, Raleway, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--btn-cl-hover);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.filter-btn {
+  background-color: var(--btn-bg-cl);
+  color: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  border: 0px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--btn-bg-cl-hover);
+  color: var(--btn-cl-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.product-class {
+  color: var(--secondary-text-cl);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  margin: auto;
+}
+
+.logo-span {
+  color: var(--btn-bg-cl-hover);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.address-footer {
+  line-height: calc(24 / 14);
+  font-style: normal;
+  color: var(--btn-cl-hover);
+}
+
+.footer {
+  background-color: var(--secondary-bg-cl);
+  padding: 60px 0;
+}
+
+.mail-footer,
+.phone-footer {
+  font-style: normal;
+  line-height: calc(24 / 14);
+  color: var(--footer-mail-tel-cl);
+}
+
+.footer .logo {
+  color: var(--btn-cl-hover);
+}
+
+.header .logo {
+  margin-right: 0;
+}
+
+.header .active {
+  color: var(--btn-bg-cl-hover);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--btn-bg-cl-hover);
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.tel-header,
+.mail-header {
+  color: var(--secondary-text-cl);
+}
+
+.hero .hero-h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--btn-cl-hover);
+}
+
+.hero {
+  background-color: var(--secondary-bg-cl);
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--btn-bg-cl-hover);
+  color: var(--btn-cl-hover);
+  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.feature-name {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  font-size: initial;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  line-height: calc(24 / 14);
+  color: var(--secondary-text-cl);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-post {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--secondary-text-cl);
+  margin-bottom: 30px;
+}
+
+.services-block-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.nav-elements {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts-header {
+  margin: auto;
+  display: flex;
+  gap: 50px;
+}
+
+.filter {
+  display: flex;
+  margin: auto;
+  gap: 8px;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.header .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+.product-list {
+  display: flex;
+  width: 1170px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 0;
+}
+
+.product-list .product {
+  width: 370px;
+  border: 1px solid var(--border-cl);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.portfolios-list {
+  display: flex;
+  gap: 30px;
+  width: 1170px;
+  margin: auto;
+}
+
+.portfolio-element {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.fatures-list {
+  display: flex;
+  gap: 30px;
+  width: 1170px;
+  margin: auto;
+}
+
+.services-list {
+  display: flex;
+  gap: 30px;
+  width: 1170px;
+  margin: auto;
+}
+
+.our-team-block-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.portfolio {
+  background-color: var(--ourteam-bg-cl);
+}
+
+.portfolio-element {
+  background-color: var(--btn-cl-hover);
+}
+
+ul {
+  padding: 0;
+}
+
+.hero {
+  padding: 200px 0;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer .nav-link {
+  font-weight: 400;
+}
+
+.portfolio-section .container {
+  margin: 94px auto;
+}
+
+.product-text {
+  margin: 20px 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.service-img {
+  display: block;
+}
+
+.hero-h1{
+  width: 696px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.section{
+  margin-bottom: 94px;
+}
+
+.portfolio .container {
+  padding: 94px 0;
+}
+
+.portfolio.section{
+  margin-bottom: 0;
+}
+
+ul.footer-list.list{
+  margin: 0;
+}
+
+.footer a.logo.link{
+  margin-bottom: 20px;
+  display: block;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header ul.contacts-header{
+  margin: 0;
+  margin-left: auto;
+}
+
+.header ul.nav-elements.list{
+  margin-left: 93px;
+}
