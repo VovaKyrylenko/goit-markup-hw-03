@@ -174,7 +174,7 @@ body {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-  font-size: initial;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
@@ -255,7 +255,6 @@ body {
 
 .product-list .product {
   width: 370px;
-  border: 1px solid var(--border-cl);
 }
 
 .header {
@@ -327,12 +326,12 @@ ul {
   font-weight: 400;
 }
 
-.portfolio-section .container {
-  margin: 94px auto;
-}
 
 .product-text {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-left:  1px solid var(--border-cl);
+  border-bottom:  1px solid var(--border-cl);
+  border-right:  1px solid var(--border-cl);
 }
 
 h1,
@@ -360,10 +359,6 @@ p {
 }
 
 .section{
-  margin-bottom: 94px;
-}
-
-.portfolio .container {
   padding: 94px 0;
 }
 
@@ -391,4 +386,20 @@ ul.footer-list.list{
 
 .header ul.nav-elements.list{
   margin-left: 93px;
+}
+
+.our-services.section{
+  padding-top: 0;
+}
+
+img.portfolio-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
